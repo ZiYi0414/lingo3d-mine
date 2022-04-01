@@ -19,7 +19,7 @@ import {
 } from "lingo3d-react";
 import { useRef, useState, useEffect } from "react";
 import { animationsObj } from "./model";
-import './App.css'
+import "./App.css";
 
 let pose = "idleAnimation";
 const Game = () => {
@@ -109,21 +109,26 @@ const Game = () => {
 
   return (
     <>
-      <World defaultLight={false} bloom bloomStrength={0.2} bloomThreshold={0.3}>
+      <World
+        defaultLight={false}
+        bloom
+        bloomStrength={0.2}
+        bloomThreshold={0.3}
+      >
         <Cube
           width={2000}
           depth={2000}
           height={1}
           innerY={-50}
           color="#3d3d3d"
-          texture="/public/background/dimian.jpg"
+          texture="public/background/dimian.jpg"
           textureRepeat={10}
           physics="map"
         >
           {/* <Model src="fairy.glb" scale={20} physics="map" y={300}></Model> */}
           <ThirdPersonCamera active mouseControl fov={fov}>
             <Model
-              src="/public/new/T-Pose.fbx"
+              src="characters/Gril/gril1/T-Pose.fbx"
               //src="person.glb"
               innerX={-10}
               innerY={-50}
@@ -138,7 +143,7 @@ const Game = () => {
           <SkyLight intensity={0.5} />
           <AmbientLight intensity={0.8} />
         </Cube>
-        <Skybox texture="/public/background/skybox.jpg" />
+        <Skybox texture="background/skybox.jpg" />
       </World>
 
       <Joystick
@@ -152,9 +157,9 @@ const Game = () => {
 const App = () => {
   const progress = usePreload(
     [
-      "/public/new/T-Pose.fbx",
-      "/public/background/skybox.jpg",
-      "/public/background/dimian.jpg",
+      "characters/Gril/gril1/T-Pose.fbx",
+      "background/skybox.jpg",
+      "background/dimian.jpg",
     ],
     "40.5mb"
   );
