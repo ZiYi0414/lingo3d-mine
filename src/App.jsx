@@ -15,48 +15,97 @@ import {
   World,
   Editor,
   SkyLight,
+  useMouse,
 } from "lingo3d-react";
-import { useRef, useState } from "react";
-import { useEffect } from "react/cjs/react.production.min";
-import { animationsObj, activeMap } from "./model";
-let characterState = "idle";
+import { useRef, useState, useEffect } from "react";
+import { animationsObj } from "./model";
+import './App.css'
 
+let pose = "idleAnimation";
 const Game = () => {
-  const key = useKeyboard();
-  const characterRef = useRef();
-  const [joystick, setJoystick] = useState({ x: 0, y: 0, angle: 0 });
   const windowSize = useWindowSize();
   const fov = windowSize.width > windowSize.height ? 75 : 100;
+  const [joystick, setJoystick] = useState({ x: 0, y: 0, angle: 0 });
+  const key = useKeyboard();
+  const characterRef = useRef();
+  const [characterRotationY, setCharacterRotationY] = useState(0);
+  const [pose, setPose] = useState("idleAnimation");
 
-  const forword = key === "w";
-  const leftRunning = key === "a";
-  const rightRunning = key === "d";
-  const back = key === "s";
-  const dance = key === "v";
-  const jump = key === "space";
+  const characterState = (key) => {
+    console.log(key);
+    switch (key) {
+      case "w": {
+        // setCharacterRotationY(0)
+        setPose("runningAnimation");
+        break;
+      }
+      case "s": {
+        // setCharacterRotationY(180)
+        setPose("backRunning");
+        break;
+      }
+      case "a": {
+        // setCharacterRotationY(90)
+        setPose("leftRunning");
+        break;
+      }
+      case "d": {
+        // setCharacterRotationY(270)
+        setPose("rightRunning");
+        break;
+      }
+      case "v": {
+        setPose("Dancing");
+        break;
+      }
+      case "Space": {
+        setPose("Flair");
+        break;
+      }
+      case "w Shift": {
+        setPose("Zombie");
+        break;
+      }
+      case "Shift w": {
+        setPose("Zombie");
+        break;
+      }
+      case "Space w": {
+        setPose("CrossJumps");
+        break;
+      }
+      case "w Space": {
+        setPose("CrossJumps");
+        break;
+      }
+    }
+  };
 
-  // if(key === 'space'){
-  //   setCharacterState('crossJumps')
-  // }
-  // if(key === 'w'||key==='s'|| key ==='a'|| key ==='d'){
-  //   setCharacterState('running')
-  // }
-  // if(key === 'v'){
-  //   setCharacterState('dancing')
-  // }
+  useLoop(() => {
+    characterRef.current?.moveForward(-3);
+  }, pose === "runningAnimation");
+  // useLoop(() => {
+  //   characterRef.current?.moveForward(3);
+  // }, pose === "backRunning");
+  // useLoop(() => {
+  //   characterRef.current?.moveRight(3)
+  // }, pose === "leftRunning");
+  // useLoop(() => {
+  //   characterRef.current?.moveRight(-3);
+  // }, pose === "rightRunning");
+  useLoop(() => {
+    characterRef.current?.moveForward(-0.2);
+  }, pose === "Zombie");
+  useLoop(() => {
+    characterRef.current?.moveForward(-6);
+  }, pose === "CrossJumps");
 
-  useLoop(() => {
-    characterRef.current?.moveForward(-5);
-  }, forword);
-  useLoop(() => {
-    characterRef.current?.moveRight(5);
-  }, leftRunning);
-  useLoop(() => {
-    characterRef.current?.moveRight(-5);
-  }, rightRunning);
-  useLoop(() => {
-    characterRef.current?.moveForward(5);
-  }, back);
+  useEffect(() => {
+    characterState(key);
+    return () => {
+      setPose("idleAnimation");
+    };
+  }, [key]);
 
   return (
     <>
@@ -67,35 +116,29 @@ const Game = () => {
           height={1}
           innerY={-50}
           color="#3d3d3d"
-          texture="dimian.jpg"
+          texture="/public/background/dimian.jpg"
           textureRepeat={10}
           physics="map"
         >
           {/* <Model src="fairy.glb" scale={20} physics="map" y={300}></Model> */}
-
-          <ThirdPersonCamera active mouseControl fov={75}>
+          <ThirdPersonCamera active mouseControl fov={fov}>
             <Model
               src="/public/new/T-Pose.fbx"
               //src="person.glb"
               innerX={-10}
               innerY={-50}
               innerZ={50}
+              innerRotationY={characterRotationY}
               ref={characterRef}
               animations={{ ...animationsObj }}
-              animation={
-                forword || back || rightRunning || leftRunning
-                  ? "runningAnimation"
-                  : dance
-                  ? "Dancing"
-                  : "idleAnimation"
-              }
+              animation={pose}
             />
           </ThirdPersonCamera>
 
           <SkyLight intensity={0.5} />
           <AmbientLight intensity={0.8} />
         </Cube>
-        <Skybox texture="skybox.jpg" />
+        <Skybox texture="/public/background/skybox.jpg" />
       </World>
 
       <Joystick
@@ -107,7 +150,15 @@ const Game = () => {
 };
 
 const App = () => {
-  const progress = usePreload(["gallery.glb", "skybox.jpg"], "3.5mb");
+  const progress = usePreload(
+    [
+      "/public/new/T-Pose.fbx",
+      "/public/background/skybox.jpg",
+      "/public/background/dimian.jpg",
+    ],
+    "40.5mb"
+  );
+  console.log(progress);
 
   if (progress < 100)
     return (
@@ -118,18 +169,23 @@ const App = () => {
           position: "absolute",
           left: 0,
           top: 0,
-          background: "black",
+          background: "#34495e",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          color: "white",
+          color: "#ecf0f1",
+          fontSize: 25,
         }}
       >
-        loading {Math.round(progress)}%
+        垃圾代码正在加载... {Math.round(progress)}%
       </div>
     );
 
-  return <Game />;
+  return (
+    <>
+      <Game />
+    </>
+  );
 };
 
 export default App;
