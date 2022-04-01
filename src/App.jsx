@@ -1,5 +1,6 @@
 import {
   AreaLight,
+  DirectionalLight,
   Cube,
   FirstPersonCamera,
   ThirdPersonCamera,
@@ -18,7 +19,7 @@ import {
   useMouse,
 } from "lingo3d-react";
 import { useRef, useState, useEffect } from "react";
-import { animationsObj } from "./model";
+import { animationsGril1 } from "./model";
 import "./App.css";
 
 let pose = "idleAnimation";
@@ -116,8 +117,8 @@ const Game = () => {
         bloomThreshold={0.3}
       >
         <Cube
-          width={2000}
-          depth={2000}
+          width={6000}
+          depth={6000}
           height={1}
           innerY={-50}
           color="#3d3d3d"
@@ -125,8 +126,16 @@ const Game = () => {
           textureRepeat={10}
           physics="map"
         >
-          {/* <Model src="fairy.glb" scale={20} physics="map" y={300}></Model> */}
-          <ThirdPersonCamera active mouseControl fov={fov}>
+          <Model src="other/fish.glb" z={-549}></Model>
+          <Model
+            src="scenes/house1.glb"
+            scale={4}
+            x={0}
+            y={123}
+            z={-704}
+            physics="map"
+          ></Model>
+          <OrbitCamera active enableZoom fov={fov}>
             <Model
               src="characters/Gril/gril1/T-Pose.fbx"
               //src="person.glb"
@@ -135,17 +144,17 @@ const Game = () => {
               innerZ={50}
               innerRotationY={characterRotationY}
               ref={characterRef}
-              animations={{ ...animationsObj }}
+              animations={{ ...animationsGril1 }}
               animation={pose}
             />
-          </ThirdPersonCamera>
+          </OrbitCamera>
 
           <SkyLight intensity={0.5} />
-          <AmbientLight intensity={0.8} />
+          <AmbientLight intensity={0.3} />
         </Cube>
         <Skybox texture="background/skybox.jpg" />
       </World>
-
+      {/* <Editor /> */}
       <Joystick
         onMove={setJoystick}
         onMoveEnd={() => setJoystick({ x: 0, y: 0, angle: e.angle })}
@@ -194,31 +203,3 @@ const App = () => {
 };
 
 export default App;
-
-// {import { World, Cube, OrbitCamera, Model, Skybox, ThirdPersonCamera } from "lingo3d-react";
-// import { useState } from "react";
-
-// function App() {
-//   const [count, setCount] = useState(0);
-//   const [position, setPosition] = useState({ x: 0, y: 0, z: 0 });
-
-//   return (
-//     <World>
-//       <Skybox texture="skybox.jpg" />
-//       <Cube
-//         width={2000}
-//         depth={2000}
-//         height={1}
-//         z={-100}
-//         color="#3d3d3d"
-//         texture="dimian.jpg"
-//       >
-//         <Model src="Women.glb" scale={2} physics="character" />
-//         {/* <Cube scale={1} color="orange" x={position.x} y={position.y} z={position.z} /> */}
-//         <OrbitCamera active z={300} />
-//       </Cube>
-//     </World>
-//   );
-// }
-
-// export default App;}

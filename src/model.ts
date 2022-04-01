@@ -1,4 +1,4 @@
-export const animationsObj = {
+export const animationsGril1 = {
   idleAnimation: "characters/Gril/gril1/active/Idle.fbx",
   runningAnimation: "characters/Gril/gril1/active/Running.fbx",
   backRunning: "characters/Gril/gril1/active/Running.fbx",
