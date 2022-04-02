@@ -19,7 +19,7 @@ import {
   useMouse,
 } from "lingo3d-react";
 import { useRef, useState, useEffect } from "react";
-import { animationsGril1 } from "./model";
+import { animationsGirl1, animationsGirl2, animationsGirl3 } from "./model";
 import "./App.css";
 
 let pose = "idleAnimation";
@@ -36,22 +36,22 @@ const Game = () => {
     console.log(key);
     switch (key) {
       case "w": {
-        // setCharacterRotationY(0)
-        setPose("runningAnimation");
+        setCharacterRotationY(0);
+        setPose("walkingAnimation");
         break;
       }
       case "s": {
-        // setCharacterRotationY(180)
+        // setCharacterRotationY(180);
         setPose("backRunning");
         break;
       }
       case "a": {
-        // setCharacterRotationY(90)
+        // setCharacterRotationY(90);
         setPose("leftRunning");
         break;
       }
       case "d": {
-        // setCharacterRotationY(270)
+        // setCharacterRotationY(270);
         setPose("rightRunning");
         break;
       }
@@ -59,41 +59,32 @@ const Game = () => {
         setPose("Dancing");
         break;
       }
-      case "Space": {
-        setPose("Flair");
-        break;
-      }
       case "w Shift": {
-        setPose("Zombie");
+        setPose("runningAnimation");
         break;
       }
       case "Shift w": {
-        setPose("Zombie");
-        break;
-      }
-      case "Space w": {
-        setPose("CrossJumps");
-        break;
-      }
-      case "w Space": {
-        setPose("CrossJumps");
+        setPose("runningAnimation");
         break;
       }
     }
   };
 
   useLoop(() => {
-    characterRef.current?.moveForward(-3);
+    characterRef.current?.moveForward(-4);
   }, pose === "runningAnimation");
-  // useLoop(() => {
-  //   characterRef.current?.moveForward(3);
-  // }, pose === "backRunning");
-  // useLoop(() => {
-  //   characterRef.current?.moveRight(3)
-  // }, pose === "leftRunning");
-  // useLoop(() => {
-  //   characterRef.current?.moveRight(-3);
-  // }, pose === "rightRunning");
+  useLoop(() => {
+    characterRef.current?.moveForward(-2);
+  }, pose === "walkingAnimation");
+  useLoop(() => {
+    characterRef.current?.moveForward(1);
+  }, pose === "backRunning");
+  useLoop(() => {
+    characterRef.current?.moveRight(2);
+  }, pose === "leftRunning");
+  useLoop(() => {
+    characterRef.current?.moveRight(-2);
+  }, pose === "rightRunning");
   useLoop(() => {
     characterRef.current?.moveForward(-0.2);
   }, pose === "Zombie");
@@ -124,7 +115,7 @@ const Game = () => {
           color="#3d3d3d"
           texture="public/background/dimian.jpg"
           textureRepeat={10}
-          physics="map"
+          boxVisible
         >
           <Model src="other/fish.glb" z={-549}></Model>
           <Model
@@ -135,26 +126,26 @@ const Game = () => {
             z={-704}
             physics="map"
           ></Model>
-          <OrbitCamera active enableZoom fov={fov}>
+          <ThirdPersonCamera active mouseControl fov={fov}>
             <Model
-              src="characters/Gril/gril1/T-Pose.fbx"
-              //src="person.glb"
-              innerX={-10}
-              innerY={-50}
-              innerZ={50}
+              src="characters/Girl/girl3/T-Pose.fbx"
               innerRotationY={characterRotationY}
+              loadedX={-2}
+              loadedY={-50}
+              loadedZ={3}
               ref={characterRef}
-              animations={{ ...animationsGril1 }}
+              animations={{ ...animationsGirl3 }}
               animation={pose}
+              boxVisible
             />
-          </OrbitCamera>
+          </ThirdPersonCamera>
 
           <SkyLight intensity={0.5} />
           <AmbientLight intensity={0.3} />
         </Cube>
         <Skybox texture="background/skybox.jpg" />
       </World>
-      {/* <Editor /> */}
+      <Editor />
       <Joystick
         onMove={setJoystick}
         onMoveEnd={() => setJoystick({ x: 0, y: 0, angle: e.angle })}
@@ -166,7 +157,7 @@ const Game = () => {
 const App = () => {
   const progress = usePreload(
     [
-      "characters/Gril/gril1/T-Pose.fbx",
+      "characters/Girl/girl3/T-Pose.fbx",
       "background/skybox.jpg",
       "background/dimian.jpg",
     ],
