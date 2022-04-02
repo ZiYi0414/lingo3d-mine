@@ -261,7 +261,7 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@lincode/events@*", "@lincode/events@latest":
+"@lincode/events@*":
   version "1.0.23"
   resolved "https://registry.npmmirror.com/@lincode/events/-/events-1.0.23.tgz#dcce13faafde2ce898deb17fc4762313118755f6"
   integrity sha512-6gzpHV0p8gXhbLvlE5ggj76H2AKZpAWOZBTsQWmeGCXbHlV5SQs2eHbrsZ2/fHJLQDHK1E6KfP4R81YIBQI2sA==
@@ -269,57 +269,57 @@
     "@lincode/promiselikes" "*"
     "@lincode/utils" "*"
 
-"@lincode/filetypes@latest":
+"@lincode/filetypes@*":
   version "1.0.0"
   resolved "https://registry.npmmirror.com/@lincode/filetypes/-/filetypes-1.0.0.tgz#9acd1b1460ce538cfca53671d5b5c50efdfe8279"
   integrity sha512-IBTlWnfWrCzTGXumg4HwYCQLnrPXGHYYJzUy4bmyc44OJ3BSEEMBVZPwlYPg3uy2GsK7uz833PESe3a70QajhA==
   dependencies:
     "@lincode/utils" "*"
 
-"@lincode/hooks@latest":
-  version "1.0.37"
-  resolved "https://registry.npmmirror.com/@lincode/hooks/-/hooks-1.0.37.tgz#c013d1306f87b9f6c7cda7cae2e93bee6f42a117"
-  integrity sha512-eSmddvSk/E38u+iLF0y/czx9N7rwvrzlw7Uyfs5u/TO0Elv2R0dfKGiGMy/PuhCAjNeda3IILIBUNmjfNP5+3w==
+"@lincode/hooks@*":
+  version "1.0.40"
+  resolved "https://registry.npmmirror.com/@lincode/hooks/-/hooks-1.0.40.tgz#dbb1f13ccdb6d7d046598dda009c684f323c1169"
+  integrity sha512-6btD8qUR6XhAxJNgOXrarJumdLcPBbgrg/mWHhG5JEQi5n5Mm/Y5nTHE4Y2zF2rG0grLKnIXIIxWH/Fs0dMk+w==
   dependencies:
     "@lincode/promiselikes" "*"
     "@lincode/utils" "*"
     intersection-observer "*"
     resize-observer-polyfill "*"
 
-"@lincode/math@latest":
+"@lincode/math@*":
   version "1.0.8"
   resolved "https://registry.npmmirror.com/@lincode/math/-/math-1.0.8.tgz#ed8ae14638b7e4d3834868ac4efc9bdb1e18bee6"
   integrity sha512-lgjk6Wv3YdVTsLQD1wSj8w6xyGYR66Dvg/Nu1wQUYWicYKijuDZC4UMaYjY7jb1Zf2Iwi6RVdP4iFkrdPztsBw==
 
-"@lincode/promiselikes@*", "@lincode/promiselikes@latest":
+"@lincode/promiselikes@*":
   version "1.0.19"
   resolved "https://registry.npmmirror.com/@lincode/promiselikes/-/promiselikes-1.0.19.tgz#e47564b9830316fbe85e8ce6a3e3e4fe1f2b6915"
   integrity sha512-lLT+6IfCgo7ByvE9trgi3g3l/ol4sneXCNOrySYvkkFeqxJWhwb/fR24EKEpPb/CPREJolgutcMkuN7PExnaCA==
   dependencies:
     "@lincode/utils" "*"
 
-"@lincode/react-global-state@latest":
+"@lincode/react-global-state@*":
   version "1.1.45"
   resolved "https://registry.npmmirror.com/@lincode/react-global-state/-/react-global-state-1.1.45.tgz#f4bff399ed2d8cde318a4ac7232a8a871fcc109a"
   integrity sha512-7x6Sf8AexcwS+Me2tfCokbU8hhURG7CvuFqT4XCpI9VyvaQLgyLjRj25wkhxUcd9AgHdEhW+LLhlwBq4PtYNAA==
   dependencies:
     "@lincode/reactivity" "*"
 
-"@lincode/react-joystick@latest":
-  version "1.0.4"
-  resolved "https://registry.npmmirror.com/@lincode/react-joystick/-/react-joystick-1.0.4.tgz#4e522dcee840f11325f58ebc60987aa79b24f77e"
-  integrity sha512-EqtCiI/LT3zOcDDBbwGgMxgPnz/yhhdYlo9jK/KNpRiq7+ms80qzno4VUg9xy3heRZo7kwBJ6Fu9oa/u6p5qgQ==
+"@lincode/react-joystick@*":
+  version "1.0.5"
+  resolved "https://registry.npmmirror.com/@lincode/react-joystick/-/react-joystick-1.0.5.tgz#54360675f0e3b42e7e554266117ee724d2ea9681"
+  integrity sha512-PPQJXSN+RNDGwIu9e+ly0XxpVcbaoqVOxDycVDrLTg62X8CiG+fsJq03iLGzdTVb0bCQXLBEEL+SsalCm/rZdg==
   dependencies:
-    "@lincode/hooks" latest
-    "@lincode/math" latest
+    "@lincode/hooks" "*"
+    "@lincode/math" "*"
     react-device-detect "^2.1.2"
 
-"@lincode/react-reticle@latest":
+"@lincode/react-reticle@*":
   version "1.1.0"
   resolved "https://registry.npmmirror.com/@lincode/react-reticle/-/react-reticle-1.1.0.tgz#f100eb8fea2a9db733ded46f203010aca93f502c"
   integrity sha512-G68dl19XeHMR+sLw42xW7zSxsFSG8dcl1OYGP10REesFUwQ5/RbMvfJ5CJPYERmitc8EyV9BUuppixZJtC5WwQ==
 
-"@lincode/reactivity@*", "@lincode/reactivity@latest":
+"@lincode/reactivity@*":
   version "1.0.53"
   resolved "https://registry.npmmirror.com/@lincode/reactivity/-/reactivity-1.0.53.tgz#21e26e43019501cbb0de82ce1950e586507cf491"
   integrity sha512-X4bLMOgEKNcsEB346HGKwCU/NzH1ZNTq8xT9SqR8nQS1R3XHO53/3nufcux6E8u14BfRpllYlsb2bekgRiPn1g==
@@ -328,7 +328,7 @@
     "@lincode/promiselikes" "*"
     "@lincode/utils" "*"
 
-"@lincode/utils@*", "@lincode/utils@latest":
+"@lincode/utils@*":
   version "1.2.44"
   resolved "https://registry.npmmirror.com/@lincode/utils/-/utils-1.2.44.tgz#009518a543a9ab7de1c7c91d34a834bbca94e9b3"
   integrity sha512-RyYJbym+x8arnwkIMRX1PzrCbKcMt32/zfk7XC3v+YFj+ebWou3+LfvEL7+NPTZvYym97UjVDVoi8xgJFAig5g==
@@ -336,7 +336,7 @@
     "@types/lodash" "4"
     lodash "4"
 
-"@pinyinma/guid@latest":
+"@pinyinma/guid@*":
   version "1.0.1"
   resolved "https://registry.npmmirror.com/@pinyinma/guid/-/guid-1.0.1.tgz#0142625510164dd3852775a3cd98d29e1c6aa39d"
   integrity sha512-U8rv4xNplWfdGTUoFp8/hpEOgmeD9nM3qODmPk4fpNy6+nkncj6TYY70ZM7icjVlN82Lh3hFnuPC8sjlHz7Sxw==
@@ -658,40 +658,40 @@ json5@^2.1.2:
   resolved "https://registry.npmmirror.com/json5/-/json5-2.2.1.tgz#655d50ed1e6f95ad1a3caababd2b0efda10b395c"
   integrity sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==
 
-lingo3d-react@^1.1.59:
-  version "1.1.59"
-  resolved "https://registry.npmmirror.com/lingo3d-react/-/lingo3d-react-1.1.59.tgz#b6ee363f78d9d8a0469d241b383235664b5474ef"
-  integrity sha512-59fa5tNqcKwK/kISNbOBD7XS89SJWqIGTUWCdti2QEsQutPSy48cmKZ9X0khZx2qU97c37tP1Pk6Clks3WQf1w==
+lingo3d-react@^1.2.8:
+  version "1.2.8"
+  resolved "https://registry.npmmirror.com/lingo3d-react/-/lingo3d-react-1.2.8.tgz#2faaf00474431accf0abfca3549445283ca62977"
+  integrity sha512-MHkIbrAuUegx8LTw+zB/y+3weoBYrD3YGUnETQcJwibSW6GpZ3mw/mRGlGAYQXuVi+sy7vTkFRQflXDLJ7mrkA==
   dependencies:
-    "@lincode/hooks" latest
-    "@lincode/promiselikes" latest
-    "@lincode/react-global-state" latest
-    "@lincode/react-joystick" latest
-    "@lincode/react-reticle" latest
-    "@lincode/reactivity" latest
-    "@lincode/utils" latest
+    "@lincode/hooks" "*"
+    "@lincode/promiselikes" "*"
+    "@lincode/react-global-state" "*"
+    "@lincode/react-joystick" "*"
+    "@lincode/react-reticle" "*"
+    "@lincode/reactivity" "*"
+    "@lincode/utils" "*"
     "@tweakpane/core" "1"
-    lingo3d "1.9.79"
+    lingo3d "1.10.6"
     nanoid "3"
     popmotion "11"
     tweakpane "3"
 
-lingo3d@1.9.79:
-  version "1.9.79"
-  resolved "https://registry.npmmirror.com/lingo3d/-/lingo3d-1.9.79.tgz#a102f7dd3083b44f77899bd92466668420f23a2c"
-  integrity sha512-DdeWWrBg5wtaVRzdGi52QMovRTZ+BerPwNT9C7er8EGWeqipteg/q8Zjy8Rfxi0h0GZ8fuJQG4LD64urBp+4pg==
+lingo3d@1.10.6:
+  version "1.10.6"
+  resolved "https://registry.npmmirror.com/lingo3d/-/lingo3d-1.10.6.tgz#5477dfd14bf700be84992a048887e67868159f09"
+  integrity sha512-6Fw4xDwRtVsPstUgY6OwPdnC3GNuGWyN77ybONJUNgym7btOUkHI5+brdhuZuhLKwVEXYTMQihRUWIcxAytPAg==
   dependencies:
-    "@lincode/events" latest
-    "@lincode/filetypes" latest
-    "@lincode/math" latest
-    "@lincode/promiselikes" latest
-    "@lincode/reactivity" latest
-    "@lincode/utils" latest
-    "@pinyinma/guid" latest
+    "@lincode/events" "*"
+    "@lincode/filetypes" "*"
+    "@lincode/math" "*"
+    "@lincode/promiselikes" "*"
+    "@lincode/reactivity" "*"
+    "@lincode/utils" "*"
+    "@pinyinma/guid" "*"
     "@types/three" "0.139.0"
     cannon-es "0.19.0"
     resize-observer-polyfill "1"
-    three "0.139.0"
+    three "0.139.2"
     three-mesh-bvh "0.5.8"
 
 lodash@4:
@@ -863,10 +863,10 @@ three-mesh-bvh@0.5.8:
   resolved "https://registry.npmmirror.com/three-mesh-bvh/-/three-mesh-bvh-0.5.8.tgz#d8882625c0d5b07e86e0c2ad3cff2091e3650af8"
   integrity sha512-aw1hGGKP91WC98vDh+M7yGczwnmmtbcCwDjsh7hls076S91GuSfWbCoym3GK64uR0BhySlV5mEitCKQu3o7srg==
 
-three@0.139.0:
-  version "0.139.0"
-  resolved "https://registry.npmmirror.com/three/-/three-0.139.0.tgz#4805eeb4cde85d8a82b6048088230f8ce5b75375"
-  integrity sha512-hZ4LkCjgoEM82WLaOVptDKGpB3SkEyuJP2OHe36AFO8hS2I6CrEiNanXj7wwR3wIPT7V5wi5Y5pFnncS5SVHgQ==
+three@0.139.2:
+  version "0.139.2"
+  resolved "https://registry.npmmirror.com/three/-/three-0.139.2.tgz#b110799a15736df673b9293e31653a4ac73648dd"
+  integrity sha512-gV7q7QY8rogu7HLFZR9cWnOQAUedUhu2WXAnpr2kdXZP9YDKsG/0ychwQvWkZN5PlNw9mv5MoCTin6zNTXoONg==
 
 to-fast-properties@^2.0.0:
   version "2.0.0"
