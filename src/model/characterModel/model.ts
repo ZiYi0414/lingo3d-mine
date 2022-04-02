@@ -1,3 +1,4 @@
+//橙色毛
 export const animationsGirl1 = {
   idleAnimation: "characters/Girl/girl1/active/DwarfIdle.fbx",
   runningAnimation: "characters/Girl/girl1/active/Running.fbx",
@@ -11,13 +12,13 @@ export const animationsGirl1 = {
   Kick: "characters/Girl/girl1/active/Kick.fbx",
   Zombie: "characters/Girl/girl1/active/Zombie.fbx",
 }
-
+//白毛眼镜
 export const animationsGirl2 = {
   idleAnimation: "characters/Girl/girl2/active/Idle.fbx",
   runningAnimation: "chawracters/Girl/girl2/active/Dancing.fbx",
   wavingAnimation: "characters/Girl/girl2/active/Waving.fbx",
 }
-
+//粉毛猫耳
 export const animationsGirl3 = {
   idleAnimation: "characters/Girl/girl3/active/Idle.fbx",
   walkingAnimation: "characters/Girl/girl3/active/Walking.fbx",
