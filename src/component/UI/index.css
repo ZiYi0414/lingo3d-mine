@@ -1,0 +1,4 @@
+.ui-wrap {
+    position: absolute;
+    z-index: 999;
+}

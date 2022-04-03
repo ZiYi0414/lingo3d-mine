@@ -1,7 +1,6 @@
 import {
   ThirdPersonCamera,
   OrbitCamera,
-  Model,
   Skybox,
   useWindowSize,
   World,
@@ -9,6 +8,7 @@ import {
   useKeyboard,
 } from "lingo3d-react";
 import { useState, useEffect } from "react";
+import "./index.css";
 
 import MainCharacter from "../../component/characterComponent/MainCharacter";
 import WhiteHairCharacter from "../../component/characterComponent/WhiteHairCharacter";
@@ -16,7 +16,7 @@ import OrangeHairCharacter from "../../component/characterComponent/OrangeHairCh
 import GroundCube from "../../component/scenesComponent/groundCube";
 import LightGroup from "../../component/light/Light";
 import NightHouse from "../../component/scenesComponent/NightHouse";
-import SnowScene from "../../component/scenesComponent/SnowScene";
+import UI from "../../component/UI";
 
 const Game = () => {
   const key = useKeyboard();
@@ -30,7 +30,8 @@ const Game = () => {
     };
   }, [key]);
   return (
-    <>
+    <div className="game-wrap">
+      <UI />
       <World
         defaultLight={false}
         performance="quality"
@@ -66,8 +67,8 @@ const Game = () => {
           ]}
         />
       </World>
-      <Editor />
-    </>
+      {/* <Editor /> */}
+    </div>
   );
 };
 

@@ -4,10 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      audio{
+        position: absolute;
+        left: -280px;
+        transition: all 0.3s;
+      }
+      audio:hover{
+        left: 0;
+      }
+    </style>
     <title>我屌这是个什么东西啊！</title>
   </head>
   <body>
     <div id="root"></div>
+    <audio controls loop>
+      <source src="sleepy-story.mp3" type="audio/mpeg" />
+      您的浏览器不支持 audio 元素。
+    </audio>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
