@@ -170,6 +170,8 @@ const MainCharacter = (prop) => {
       depth={80}
       id={prop?.id}
       src="characters/Girl/girl3/T-Pose.fbx"
+      x={-300}
+      z={680}
       innerRotationY={characterRotationY}
       loadedX={-2}
       loadedY={-50}

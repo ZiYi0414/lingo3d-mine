@@ -24,7 +24,6 @@ const WhiteHairCharacter = (prop) => {
   return (
     <Model
       x={-110}
-      y={7}
       z={280}
       scale={1.1}
       rotationY={-90}
