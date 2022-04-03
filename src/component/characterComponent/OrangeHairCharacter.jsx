@@ -26,9 +26,9 @@ const OrangeHairCharacter = (prop) => {
       loadedX={-2}
       loadedY={-50}
       loadedZ={3}
-      x={-100}
+      x={-200}
       y={0}
-      z={-110}
+      z={-300}
       depth={50}
       src="characters/Girl/girl1/T-Pose.fbx"
       ref={characterRef}

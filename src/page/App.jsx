@@ -13,13 +13,9 @@ const App = () => {
     "40.5mb"
   );
 
-  if (true) return <Preload progress={progress} />;
+  if (progress < 100) return <Preload progress={progress} />;
 
-  return (
-    <>
-      <Game />
-    </>
-  );
+  return <Game />;
 };
 
 export default App;

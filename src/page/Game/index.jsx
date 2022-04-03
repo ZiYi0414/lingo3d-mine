@@ -33,6 +33,7 @@ const Game = () => {
     <>
       <World
         defaultLight={false}
+        performance="quality"
         bloom
         bloomRadius={1}
         bloomStrength={0.2}

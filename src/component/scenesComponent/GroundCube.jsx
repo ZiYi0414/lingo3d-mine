@@ -10,8 +10,8 @@ const GroundCube = () => {
       color="#3d3d3d"
       opacity={1}
       physics="map"
-      // texture="public/background/dimian.jpg"
-      // textureRepeat={10}
+      texture="background/skybox/Up.png"
+      textureRepeat={20}
     ></Cube>
   );
 };
