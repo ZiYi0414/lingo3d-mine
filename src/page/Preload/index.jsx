@@ -1,6 +1,9 @@
+import "./index.css";
+
 const Preload = ({ progress }) => {
   return (
     <div
+      className="preload"
       style={{
         width: "100vw",
         height: "100vh",
