@@ -15,8 +15,8 @@ import WhiteHairCharacter from "../../component/characterComponent/WhiteHairChar
 import OrangeHairCharacter from "../../component/characterComponent/OrangeHairCharacter";
 import GroundCube from "../../component/scenesComponent/groundCube";
 import LightGroup from "../../component/light/Light";
-import House1 from "../../component/scenesComponent/House1";
-import Fish from "../../component/scenesComponent/Fish";
+import NightHouse from "../../component/scenesComponent/NightHouse";
+import SnowScene from "../../component/scenesComponent/SnowScene";
 
 const Game = () => {
   const key = useKeyboard();
@@ -39,7 +39,7 @@ const Game = () => {
         bloomThreshold={0.3}
       >
         <GroundCube />
-        <House1 />
+        <NightHouse />
         <ThirdPersonCamera active mouseControl fov={fov}>
           <MainCharacter id="mainCharacter" keyboard={key} />
         </ThirdPersonCamera>
@@ -65,7 +65,7 @@ const Game = () => {
           ]}
         />
       </World>
-      {/* <Editor /> */}
+      <Editor />
     </>
   );
 };

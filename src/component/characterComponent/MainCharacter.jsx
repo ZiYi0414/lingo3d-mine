@@ -177,6 +177,7 @@ const MainCharacter = (prop) => {
       ref={characterRef}
       animations={{ ...animationsGirl3 }}
       animation={pose}
+      physics="character"
     />
   );
 };

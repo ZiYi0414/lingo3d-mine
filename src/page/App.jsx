@@ -13,7 +13,7 @@ const App = () => {
     "40.5mb"
   );
 
-  if (progress < 100) return <Preload progress={progress} />;
+  if (true) return <Preload progress={progress} />;
 
   return (
     <>

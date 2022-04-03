@@ -8,7 +8,8 @@ const GroundCube = () => {
       height={1}
       innerY={-50}
       color="#3d3d3d"
-      opacity={0.3}
+      opacity={1}
+      physics="map"
       // texture="public/background/dimian.jpg"
       // textureRepeat={10}
     ></Cube>
