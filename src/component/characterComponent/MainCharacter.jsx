@@ -117,16 +117,16 @@ const MainCharacter = (prop) => {
   };
 
   useLoop(() => {
-    characterRef.current?.moveForward(-3);
+    characterRef.current?.moveForward(-5);
   }, pose === "runningAnimation");
   useLoop(() => {
-    characterRef.current?.moveForward(3);
+    characterRef.current?.moveForward(5);
   }, pose === "backRunningAnimation");
   useLoop(() => {
-    characterRef.current?.moveRight(3);
+    characterRef.current?.moveRight(5);
   }, pose === "leftRunningAnimation");
   useLoop(() => {
-    characterRef.current?.moveRight(-3);
+    characterRef.current?.moveRight(-5);
   }, pose === "rightRunningAnimation");
 
   useLoop(() => {
@@ -170,8 +170,9 @@ const MainCharacter = (prop) => {
       depth={80}
       id={prop?.id}
       src="characters/Girl/girl3/T-Pose.fbx"
-      x={-300}
-      z={680}
+      x={-1515}
+      y={1242}
+      z={-903}
       innerRotationY={characterRotationY}
       loadedX={-2}
       loadedY={-50}
@@ -180,6 +181,8 @@ const MainCharacter = (prop) => {
       animations={{ ...animationsGirl3 }}
       animation={pose}
       physics="character"
+      frustumCulled={false}
+      toon
     />
   );
 };

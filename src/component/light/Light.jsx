@@ -2,7 +2,7 @@ import { AmbientLight, SkyLight, SpotLight } from "lingo3d-react";
 const LightGroup = () => {
   return (
     <>
-      <SkyLight intensity={0.5} />
+      <SkyLight intensity={0.4} />
       <AmbientLight intensity={0.3} />
       {/* <SpotLight
         intensity={1}

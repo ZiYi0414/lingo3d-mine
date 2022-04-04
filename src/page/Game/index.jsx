@@ -13,10 +13,16 @@ import "./index.css";
 import MainCharacter from "../../component/characterComponent/MainCharacter";
 import WhiteHairCharacter from "../../component/characterComponent/WhiteHairCharacter";
 import OrangeHairCharacter from "../../component/characterComponent/OrangeHairCharacter";
-import GroundCube from "../../component/scenesComponent/groundCube";
 import LightGroup from "../../component/light/Light";
 import NightHouse from "../../component/scenesComponent/NightHouse";
 import UI from "../../component/UI";
+import SkyTown from "../../component/scenesComponent/SkyTown";
+import SkyIsland from "../../component/scenesComponent/SkyIsland";
+import Shop from "../../component/scenesComponent/shop";
+import SkyCity from "../../component/scenesComponent/SkyCity";
+import CubeMask from "../../component/scenesComponent/CubeMask/CubeMask";
+import GroundCity from "../../component/scenesComponent/GroundCity";
+import Shop2 from "../../component/scenesComponent/Shop2";
 
 const Game = () => {
   const key = useKeyboard();
@@ -33,15 +39,21 @@ const Game = () => {
     <div className="game-wrap">
       <UI />
       <World
-        defaultLight={false}
-        performance="quality"
+        defaultLight="studio"
+        performance="balanced"
         bloom
         bloomRadius={1}
         bloomStrength={0.2}
         bloomThreshold={0.3}
       >
-        <GroundCube />
+        <CubeMask />
         <NightHouse />
+        <SkyIsland />
+        <Shop />
+        <Shop2 />
+        <SkyCity />
+        <GroundCity />
+
         <ThirdPersonCamera active mouseControl fov={fov}>
           <MainCharacter id="mainCharacter" keyboard={key} />
         </ThirdPersonCamera>
@@ -67,7 +79,6 @@ const Game = () => {
           ]}
         />
       </World>
-      {/* <Editor /> */}
     </div>
   );
 };

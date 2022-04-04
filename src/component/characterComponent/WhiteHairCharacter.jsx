@@ -32,9 +32,8 @@ const WhiteHairCharacter = (prop) => {
       ref={characterRef}
       animations={{ ...animationsGirl2 }}
       animation={pose}
-      onIntersect={debounceImmediate(handleIntersect, 3000, true)}
-      intersectIDs={[...prop.intersectIDs]}
       physics="character"
+      frustumCulled={false}
     />
   );
 };

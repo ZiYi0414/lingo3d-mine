@@ -34,8 +34,8 @@ const OrangeHairCharacter = (prop) => {
       ref={characterRef}
       animations={{ ...animationsGirl1 }}
       animation={pose}
-      onIntersect={debounceImmediate(handleIntersect, 3000, true)}
-      intersectIDs={[...prop.intersectIDs]}
+      toon
+      frustumCulled={false}
     />
   );
 };
