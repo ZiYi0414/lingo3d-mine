@@ -17,7 +17,7 @@ export const animationsGirl2 = {
 }
 //粉毛猫耳
 export const animationsGirl3 = {
-  idleAnimation: "characters/Girl/girl3/active/Idle.fbx",
+  idleAnimation: "characters/Girl/girl3/active/DrafIdle.fbx",
   walkingAnimation: "characters/Girl/girl3/active/Walking.fbx",
   backWalkingAnimation: "characters/Girl/girl3/active/Walking Backward.fbx",
   leftWalkingAnimation: "characters/Girl/girl3/active/Left Strafe Walk.fbx",
