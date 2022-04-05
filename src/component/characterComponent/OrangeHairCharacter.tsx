@@ -4,7 +4,6 @@ import { animationsGirl1 } from '../../model/characterModel/model'
 import { debounceImmediate } from '../../utils/debounce-throttle'
 
 const OrangeHairCharacter = (prop) => {
-  const key = prop.keyboard
   const characterRef = useRef()
   const [pose, setPose] = useState('idleAnimation')
 
@@ -34,7 +33,6 @@ const OrangeHairCharacter = (prop) => {
       ref={characterRef}
       animations={{ ...animationsGirl1 }}
       animation={pose}
-      toon
       frustumCulled={false}
     />
   )

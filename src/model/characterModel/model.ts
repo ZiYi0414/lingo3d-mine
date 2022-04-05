@@ -30,5 +30,6 @@ export const animationsGirl3 = {
   backRunningAnimation: 'characters/Girl/girl3/active/Running.fbx',
   leftRunningAnimation: 'characters/Girl/girl3/active/Running.fbx',
   rightRunningAnimation: 'characters/Girl/girl3/active/Running.fbx',
-  Dancing: 'characters/Girl/girl3/active/Dancing Running Man.fbx'
+  Dancing: 'characters/Girl/girl3/active/Dancing Running Man.fbx',
+  flyAnimation: 'characters/Girl/girl3/active/Hurricane Kick.fbx'
 }

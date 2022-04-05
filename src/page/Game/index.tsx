@@ -16,29 +16,29 @@ import OrangeHairCharacter from '../../component/characterComponent/OrangeHairCh
 import LightGroup from '../../component/light/Light'
 import NightHouse from '../../component/scenesComponent/NightHouse'
 import UI from '../../component/UI'
-import SkyIsland from '../../component/scenesComponent/SkyIsland'
-import Shop from '../../component/scenesComponent/Shop'
-import SkyCity from '../../component/scenesComponent/SkyCity'
+
 import CubeMask from '../../component/scenesComponent/CubeMask/CubeMask'
 import GroundCity from '../../component/scenesComponent/GroundCity'
 import Shop2 from '../../component/scenesComponent/Shop2'
+import SkyModel from '../../component/scenesComponent/CubeMask/SkyModel/SkyModel'
 
 const Game = () => {
-  const key = useKeyboard()
+  // const key = useKeyboard()
   const windowSize = useWindowSize()
   const fov = windowSize.width > windowSize.height ? 75 : 100
   const [isDance, setIsDance] = useState(false)
-  useEffect(() => {
-    if (key === 'v') setIsDance(true)
-    return () => {
-      setIsDance(false)
-    }
-  }, [key])
+  // useEffect(() => {
+  //   if (key === 'v') setIsDance(true)
+  //   return () => {
+  //     setIsDance(false)
+  //   }
+  // }, [key])
+
   return (
     <div className="game-wrap">
-      <UI />
+      {/* <UI /> */}
       <World
-        defaultLight="studio"
+        defaultLight={false}
         performance="balanced"
         bloom
         bloomRadius={1}
@@ -46,25 +46,22 @@ const Game = () => {
         bloomThreshold={0.3}
       >
         <CubeMask />
-        <NightHouse />
-        <SkyIsland />
-        <Shop />
+        {/* <NightHouse /> */}
+
         <Shop2 />
-        <SkyCity />
+        <SkyModel />
         <GroundCity />
 
         <ThirdPersonCamera active mouseControl fov={fov}>
-          <MainCharacter id="mainCharacter" keyboard={key} />
+          <MainCharacter id="mainCharacter" />
         </ThirdPersonCamera>
         <WhiteHairCharacter
           isDance={isDance}
           intersectIDs={['mainCharacter']}
-          keyboard={key}
         />
         <OrangeHairCharacter
           isDance={isDance}
           intersectIDs={['mainCharacter']}
-          keyboard={key}
         />
         <LightGroup />
         <Skybox
