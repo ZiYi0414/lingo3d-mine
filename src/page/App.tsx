@@ -23,7 +23,7 @@ const App = () => {
       "background/skybox/Back.png",
       "scenes/low-poly-building-with-characters-night-v1.glb",
     ],
-    "100.5mb"
+    "149mb"
   );
 
   if (progress < 100) return <Preload progress={progress} />;

@@ -16,9 +16,8 @@ import OrangeHairCharacter from "../../component/characterComponent/OrangeHairCh
 import LightGroup from "../../component/light/Light";
 import NightHouse from "../../component/scenesComponent/NightHouse";
 import UI from "../../component/UI";
-import SkyTown from "../../component/scenesComponent/SkyTown";
 import SkyIsland from "../../component/scenesComponent/SkyIsland";
-import Shop from "../../component/scenesComponent/shop";
+import Shop from "../../component/scenesComponent/Shop";
 import SkyCity from "../../component/scenesComponent/SkyCity";
 import CubeMask from "../../component/scenesComponent/CubeMask/CubeMask";
 import GroundCity from "../../component/scenesComponent/GroundCity";
