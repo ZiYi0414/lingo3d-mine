@@ -1,5 +1,5 @@
 const TipLable = () => {
-  return <div style={{}}></div>;
-};
+  return <div style={{}}></div>
+}
 
-export default TipLable;
+export default TipLable

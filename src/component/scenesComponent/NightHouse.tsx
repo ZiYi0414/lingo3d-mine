@@ -1,4 +1,4 @@
-import { Model, AreaLight, DirectionalLight } from "lingo3d-react";
+import { Model, AreaLight, DirectionalLight } from 'lingo3d-react'
 
 const NightHouse = () => {
   return (
@@ -13,7 +13,7 @@ const NightHouse = () => {
         toon
       ></Model>
     </>
-  );
-};
+  )
+}
 
-export default NightHouse;
+export default NightHouse

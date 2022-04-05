@@ -1,6 +1,6 @@
-import { Model, AreaLight } from "lingo3d-react";
+import { Model, AreaLight } from 'lingo3d-react'
 
-const Shop = () => {
+const Shop: React.FC = () => {
   return (
     <>
       <Model
@@ -16,7 +16,7 @@ const Shop = () => {
         toon
       ></Model>
     </>
-  );
-};
+  )
+}
 
-export default Shop;
+export default Shop

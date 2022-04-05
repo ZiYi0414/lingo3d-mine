@@ -1,4 +1,4 @@
-import { Model } from "lingo3d-react";
+import { Model } from 'lingo3d-react'
 
 const GroundCity = () => {
   return (
@@ -15,7 +15,7 @@ const GroundCity = () => {
         toon
       ></Model>
     </>
-  );
-};
+  )
+}
 
-export default GroundCity;
+export default GroundCity

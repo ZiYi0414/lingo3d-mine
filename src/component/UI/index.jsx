@@ -1,19 +1,19 @@
-import { useRef } from "react";
-import ChatList from "./component/ChatList";
-import "./index.css";
+import { useRef } from 'react'
+import ChatList from './component/ChatList'
+import './index.css'
 
 const UI = () => {
-  const tip = useRef(null);
-  const tipBtn = useRef(null);
+  const tip = useRef(null)
+  const tipBtn = useRef(null)
 
   const handleTipClick = () => {
-    tip.current.style.display = "none";
-    tipBtn.current.style.display = "block";
-  };
+    tip.current.style.display = 'none'
+    tipBtn.current.style.display = 'block'
+  }
   const handleTipBtnClick = () => {
-    tip.current.style.display = "block";
-    tipBtn.current.style.display = "none";
-  };
+    tip.current.style.display = 'block'
+    tipBtn.current.style.display = 'none'
+  }
   return (
     <div className="ui-wrap">
       <div className="tip-btn" onClick={handleTipBtnClick} ref={tipBtn}>
@@ -36,7 +36,7 @@ const UI = () => {
         <p>点击本面板关闭提示.^ ^</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default UI;
+export default UI

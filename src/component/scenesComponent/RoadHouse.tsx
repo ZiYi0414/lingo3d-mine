@@ -1,4 +1,4 @@
-import { Model } from "lingo3d-react";
+import { Model } from 'lingo3d-react'
 
 const RoadHouse = () => {
   return (
@@ -12,7 +12,7 @@ const RoadHouse = () => {
         physics="map"
       ></Model>
     </>
-  );
-};
+  )
+}
 
-export default RoadHouse;
+export default RoadHouse

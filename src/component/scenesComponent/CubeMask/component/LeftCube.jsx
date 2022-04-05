@@ -1,4 +1,4 @@
-import { Cube } from "lingo3d-react";
+import { Cube } from 'lingo3d-react'
 
 const LeftCube = () => {
   return (
@@ -15,7 +15,7 @@ const LeftCube = () => {
       physics="map"
       frustumCulled={false}
     ></Cube>
-  );
-};
+  )
+}
 
-export default LeftCube;
+export default LeftCube

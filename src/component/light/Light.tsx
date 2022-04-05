@@ -1,4 +1,4 @@
-import { AmbientLight, SkyLight, SpotLight } from "lingo3d-react";
+import { AmbientLight, SkyLight, SpotLight } from 'lingo3d-react'
 const LightGroup = () => {
   return (
     <>
@@ -14,7 +14,7 @@ const LightGroup = () => {
         y={5471}
       /> */}
     </>
-  );
-};
+  )
+}
 
-export default LightGroup;
+export default LightGroup

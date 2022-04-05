@@ -1,4 +1,4 @@
-import { Cube } from "lingo3d-react";
+import { Cube } from 'lingo3d-react'
 
 const FontCube = () => {
   return (
@@ -16,7 +16,7 @@ const FontCube = () => {
       frustumCulled={false}
       metalness={1}
     ></Cube>
-  );
-};
+  )
+}
 
-export default FontCube;
+export default FontCube

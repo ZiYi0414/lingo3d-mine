@@ -1,4 +1,4 @@
-import { Model, AreaLight } from "lingo3d-react";
+import { Model, AreaLight } from 'lingo3d-react'
 
 const Shop2 = () => {
   return (
@@ -14,7 +14,7 @@ const Shop2 = () => {
         toon
       ></Model>
     </>
-  );
-};
+  )
+}
 
-export default Shop2;
+export default Shop2

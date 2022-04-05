@@ -1,4 +1,4 @@
-import { Cube } from "lingo3d-react";
+import { Cube } from 'lingo3d-react'
 
 const SkyMask = () => {
   return (
@@ -11,7 +11,7 @@ const SkyMask = () => {
       opacity={0.5}
       physics="map"
     ></Cube>
-  );
-};
+  )
+}
 
-export default SkyMask;
+export default SkyMask

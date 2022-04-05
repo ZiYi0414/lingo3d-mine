@@ -1,4 +1,4 @@
-import { Cube } from "lingo3d-react";
+import { Cube } from 'lingo3d-react'
 
 const GroundCube = () => {
   return (
@@ -12,7 +12,7 @@ const GroundCube = () => {
       physics="map"
       textureRepeat={20}
     ></Cube>
-  );
-};
+  )
+}
 
-export default GroundCube;
+export default GroundCube

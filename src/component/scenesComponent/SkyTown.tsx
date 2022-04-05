@@ -1,4 +1,4 @@
-import { Model, AreaLight } from "lingo3d-react";
+import { Model, AreaLight } from 'lingo3d-react'
 
 const SkyTown = () => {
   return (
@@ -14,7 +14,7 @@ const SkyTown = () => {
         toon
       ></Model>
     </>
-  );
-};
+  )
+}
 
-export default SkyTown;
+export default SkyTown
