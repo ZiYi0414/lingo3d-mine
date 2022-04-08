@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#message {
+  padding: 0 20px;
+  height: 30px;
+  border-radius: 20px;
+  z-index: 999;
+  position: absolute;
+  top: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.557);
+  position: fixed;
+}

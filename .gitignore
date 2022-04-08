@@ -10,8 +10,10 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+package-lock.json
 *.local
-
+.env.preview
+.env.production
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

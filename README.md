@@ -1,8 +1,7 @@
-# 关于
+#### 安装教程
 
-- 这是一个心血来潮的项目
-- Lingo3D React
+1.  npm i
+2.  npm run dev
+3.  cd server
+4.  node app
 
-# 更新笔记
-
-- 2022-4-02 : 更新了新的模型与项目结构
