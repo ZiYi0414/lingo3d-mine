@@ -1,9 +1,12 @@
 import { Model, HTML } from 'lingo3d-react'
+import './index.less'
+
 import roleList from '../../model/role'
 function Users(props: any) {
   const { userData } = props
   const model = roleList[userData.role]
   return (
+
     <Model
       src={model.pose}
       key={userData.name}
@@ -18,8 +21,12 @@ function Users(props: any) {
       rotationZ={userData.rotationZ}
       animations={roleList[userData.role]}
       animation={userData.motion}
+      frustumCulled={false}
       physics="character"
-    ></Model>
+    >
+    </Model>
+
+
   )
 }
 export default Users

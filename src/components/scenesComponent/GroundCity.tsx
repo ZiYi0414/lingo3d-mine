@@ -5,9 +5,31 @@ const GroundCity = () => {
     <>
       <Model
         src="other/voxel-city-v1.glb"
-        x={25414}
+        x={38414}
         y={-3300}
-        z={17910}
+        z={10}
+        rotationZ={0}
+        scale={60}
+        physics="map"
+        frustumCulled={false}
+        toon
+      ></Model>
+      <Model
+        src="other/voxel-city-v1.glb"
+        x={26414}
+        y={-3300}
+        z={39910}
+        rotationZ={0}
+        scale={60}
+        physics="map"
+        frustumCulled={false}
+        toon
+      ></Model>
+      <Model
+        src="other/voxel-city-v1.glb"
+        x={-14000}
+        y={-3300}
+        z={39910}
         rotationZ={0}
         scale={60}
         physics="map"

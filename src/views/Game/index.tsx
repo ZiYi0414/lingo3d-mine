@@ -4,7 +4,8 @@ import {
   Skybox,
   World,
   useWindowSize,
-  ThirdPersonCamera
+  ThirdPersonCamera,
+  Editor
 } from 'lingo3d-react'
 import { useState, useEffect } from 'react'
 
@@ -51,7 +52,6 @@ const Game = (props: any) => {
   }, [])
   return (
     <>
-      <Menus />
       <World
         defaultLight={false}
         performance="balanced"
@@ -86,7 +86,6 @@ const Game = (props: any) => {
           ]}
         />
       </World>
-      {/* <Editor></Editor> */}
     </>
   )
 }
