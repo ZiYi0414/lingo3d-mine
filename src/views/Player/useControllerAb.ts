@@ -120,10 +120,13 @@ export default function useController(
         break
       }
       case 'Space w': {
+        setCharacterRotationY && setCharacterRotationY(0)
         setPose && setPose('fly')
         break
       }
       case 'w Space': {
+        setCharacterRotationY && setCharacterRotationY(0)
+
         setPose && setPose('fly')
         break
       }

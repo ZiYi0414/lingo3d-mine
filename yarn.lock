@@ -321,9 +321,9 @@
     "@lincode/utils" "*"
 
 "@lincode/utils@*":
-  version "1.2.45"
-  resolved "https://registry.npmmirror.com/@lincode/utils/-/utils-1.2.45.tgz#2c06e8c51fa791dbd2e6891a64b4f9a89088d74d"
-  integrity sha512-iLXVzHMeHzLG7GUkmtWO3g8t8LQwlUicpEw9EvSx7Fw27nyjKJ25MmpLWkRbYkEdbJcMd+o5VLrTpfLK9rRoXg==
+  version "1.2.46"
+  resolved "https://registry.npmmirror.com/@lincode/utils/-/utils-1.2.46.tgz#b6ebffbc688dbe799c951e7f426eab985caffdd7"
+  integrity sha512-s4J4BBCJI+j/IGG5Ec36TQyfREYMVEnzao8Y62TMRjsSidQwsHt/Q7XLDcgqQl2/9FmXketwPW0WROfD3bUMag==
   dependencies:
     "@types/lodash" "4"
     lodash "4"
@@ -508,9 +508,9 @@ browserslist@^4.17.5:
     picocolors "^1.0.0"
 
 caniuse-lite@^1.0.30001317:
-  version "1.0.30001325"
-  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001325.tgz#2b4ad19b77aa36f61f2eaf72e636d7481d55e606"
-  integrity sha512-sB1bZHjseSjDtijV1Hb7PB2Zd58Kyx+n/9EotvZ4Qcz2K3d0lWB8dB4nb8wN/TsOGFq3UuAm0zQZNQ4SoR7TrQ==
+  version "1.0.30001327"
+  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001327.tgz#c1546d7d7bb66506f0ccdad6a7d07fc6d668c858"
+  integrity sha512-1/Cg4jlD9qjZzhbzkzEaAC2JHsP0WrOc8Rd/3a3LuajGzGWR/hD7TVyvq99VqmTy99eVh8Zkmdq213OgvgXx7w==
 
 cannon-es@0.19.0:
   version "0.19.0"
@@ -876,6 +876,11 @@ hey-listen@^1.0.8:
   resolved "https://registry.npmmirror.com/hey-listen/-/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
   integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
 
+howler@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.npmmirror.com/howler/-/howler-2.2.3.tgz#a2eff9b08b586798e7a2ee17a602a90df28715da"
+  integrity sha512-QM0FFkw0LRX1PR8pNzJVAY25JhIWvbKMBFM4gqk+QdV+kPXOhleWGCB6AiAF/goGjIHK2e/nIElplvjQwhr0jg==
+
 iconv-lite@^0.4.4:
   version "0.4.24"
   resolved "https://registry.npmmirror.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -969,10 +974,10 @@ less@^4.1.2:
     needle "^2.5.2"
     source-map "~0.6.0"
 
-lingo3d-react@^1.2.24:
-  version "1.2.23"
-  resolved "https://registry.npmmirror.com/lingo3d-react/-/lingo3d-react-1.2.23.tgz#a87d16c8f4334681da992aae483306c9483422f2"
-  integrity sha512-hC5dlx0VCp9bqBaMiqBxWfkfLcLUpcsqsXNrXK//7bDEhSahs8cacVFC+WssvgLYmSHOA/lf6gPRPJdbeRh15Q==
+lingo3d-react@^1.2.35:
+  version "1.2.35"
+  resolved "https://registry.npmmirror.com/lingo3d-react/-/lingo3d-react-1.2.35.tgz#60deba438978687c17624fd53bf0c3ed06742200"
+  integrity sha512-pC7iueVe8l/fO3NPQkgbcLNcOm5CM4dUL4Jg8xOJpcTkA1LFy3SkTkoXy9K4+weev2T8LdKWOjy0iyeKJqoyZQ==
   dependencies:
     "@lincode/hooks" "*"
     "@lincode/promiselikes" "*"
@@ -982,15 +987,16 @@ lingo3d-react@^1.2.24:
     "@lincode/reactivity" "*"
     "@lincode/utils" "*"
     "@tweakpane/core" "1"
-    lingo3d "1.10.21"
+    lingo3d "1.10.36"
     nanoid "3"
     popmotion "11"
+    stats.js "^0.17.0"
     tweakpane "3"
 
-lingo3d@1.10.21:
-  version "1.10.21"
-  resolved "https://registry.npmmirror.com/lingo3d/-/lingo3d-1.10.21.tgz#ae03f29f3bfebec82cb1f102352a1dd33b57395c"
-  integrity sha512-LTaoZVq5tWxX5kjRFvqOwOxmspk+sqTqxUuMWTtZy4FGLn6rZ07vWKsfy8MToAmUPjcZHgo87pLQJll4/2OKLg==
+lingo3d@1.10.36:
+  version "1.10.36"
+  resolved "https://registry.npmmirror.com/lingo3d/-/lingo3d-1.10.36.tgz#70613c05085c45b37091d970607c7aa1f97c58b9"
+  integrity sha512-veTnJf4ML6kBeFRAzZL5kitjl7VsV7/xnwwR+l1L+SDx/3mNf3/VfK9UOJkZbCP6Qrls8+RbU0JzxOQKcACWgw==
   dependencies:
     "@lincode/events" "*"
     "@lincode/filetypes" "*"
@@ -1001,6 +1007,7 @@ lingo3d@1.10.21:
     "@pinyinma/guid" "*"
     "@types/three" "0.139.0"
     cannon-es "0.19.0"
+    howler "2.2.3"
     resize-observer-polyfill "1"
     three "0.139.2"
 
@@ -1343,6 +1350,11 @@ source-map@~0.6.0:
   version "0.6.1"
   resolved "https://registry.npmmirror.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
+
+stats.js@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.npmmirror.com/stats.js/-/stats.js-0.17.0.tgz#b1c3dc46d94498b578b7fd3985b81ace7131cc7d"
+  integrity sha512-hNKz8phvYLPEcRkeG1rsGmV5ChMjKDAWU7/OJJdDErPBNChQXxCo3WZurGpnWc6gZhAzEPFad1aVgyOANH1sMw==
 
 style-resources-loader@^1.5.0:
   version "1.5.0"

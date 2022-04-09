@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.26.1",
     "less": "^4.1.2",
-    "lingo3d-react": "^1.2.24",
+    "lingo3d-react": "^1.2.35",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "socket.io": "^4.0.1",
@@ -24,8 +24,8 @@
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
     "less-loader": "^7.3.0",
-    "style-resources-loader": "^1.5.0",
     "prettier": "^2.2.0",
+    "style-resources-loader": "^1.5.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.0",
     "vue-cli-plugin-style-resources-loader": "^0.1.5"

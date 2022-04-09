@@ -14,7 +14,7 @@ const Join = (props: any) => {
   return (
     <div className='join-background'>
       <div className="join">
-        <div className="tip">What's your Name, bro</div>
+        <div className="join-tip">What's your Name, bro</div>
         <input type="text" onChange={(e) => (state.name = e.target.value)} />
         <div className="bottom">
           <div onClick={confirmName}>进来干饭了!</div>

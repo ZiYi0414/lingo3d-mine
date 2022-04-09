@@ -5,7 +5,8 @@ import {
   World,
   useWindowSize,
   ThirdPersonCamera,
-  Editor
+  Editor,
+  Stats
 } from 'lingo3d-react'
 import { useState, useEffect } from 'react'
 
@@ -20,6 +21,7 @@ import Shop2 from '@/components/scenesComponent/Shop2'
 import SkyModel from '@/components/scenesComponent/CubeMask/SkyModel/SkyModel'
 import GroundCity from '@/components/scenesComponent/GroundCity'
 import LightGroup from '@/components/light/Light'
+import Tips from '@/components/tips'
 
 const Game = (props: any) => {
   const windowSize = useWindowSize()
@@ -45,13 +47,16 @@ const Game = (props: any) => {
     socket.on('update', (data: any) => {
       delete data[state.id]
       const arr: Array<any> = Object.keys(data).map((v) => {
-        return { ...data[v], name: v }
+        return { ...data[v], name: data[v].name }
+
       })
       setUsersData([...arr])
     })
   }, [])
   return (
     <>
+      <Tips />
+      <Stats mode="fps" />
       <World
         defaultLight={false}
         performance="balanced"

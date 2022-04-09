@@ -5,6 +5,7 @@ import roleList from '../../model/role'
 function Users(props: any) {
   const { userData } = props
   const model = roleList[userData.role]
+
   return (
 
     <Model
@@ -23,7 +24,12 @@ function Users(props: any) {
       animation={userData.motion}
       frustumCulled={false}
     >
+      <HTML>
+        <div >{userData.name}</div>
+      </HTML>
     </Model>
+
+
 
 
   )
