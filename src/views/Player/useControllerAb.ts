@@ -56,22 +56,26 @@ export default function useController(
         break
       }
       case 'Shift a': {
-        setCharacterRotationY && setCharacterRotationY(90)
+        setCharacterRotationY && setCharacterRotationY(0)
+
         setPose && setPose('leftRunning')
         break
       }
       case 'a Shift': {
-        setCharacterRotationY && setCharacterRotationY(90)
+        setCharacterRotationY && setCharacterRotationY(0)
+
         setPose && setPose('leftRunning')
         break
       }
       case 'Shift d': {
-        setCharacterRotationY && setCharacterRotationY(-90)
+        setCharacterRotationY && setCharacterRotationY(0)
+
         setPose && setPose('rightRunning')
         break
       }
       case 'd Shift': {
-        setCharacterRotationY && setCharacterRotationY(-90)
+        setCharacterRotationY && setCharacterRotationY(0)
+
         setPose && setPose('rightRunning')
         break
       }
