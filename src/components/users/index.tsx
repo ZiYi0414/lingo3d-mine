@@ -22,7 +22,6 @@ function Users(props: any) {
       animations={roleList[userData.role]}
       animation={userData.motion}
       frustumCulled={false}
-      physics="character"
     >
     </Model>
 
