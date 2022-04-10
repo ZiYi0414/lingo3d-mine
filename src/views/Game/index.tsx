@@ -17,9 +17,7 @@ import state from '@/store'
 import Users from '@/components/users'
 import Player from '../Player'
 import CubeMask from '@/components/scenesComponent/CubeMask/CubeMask'
-import Shop2 from '@/components/scenesComponent/Shop2'
 import SkyModel from '@/components/scenesComponent/CubeMask/SkyModel/SkyModel'
-import GroundCity from '@/components/scenesComponent/GroundCity'
 import LightGroup from '@/components/light/Light'
 import Tips from '@/components/tips'
 
@@ -56,7 +54,6 @@ const Game = (props: any) => {
   return (
     <>
       <Tips />
-      <Stats mode="fps" />
       <World
         defaultLight={false}
         performance="balanced"
@@ -67,11 +64,8 @@ const Game = (props: any) => {
         logarithmicDepth
       >
         <CubeMask />
-        {/* <NightHouse /> */}
 
-        <Shop2 />
         <SkyModel />
-        <GroundCity />
 
         <ThirdPersonCamera active mouseControl zoom={zoom} fov={80}>
           <Player />
