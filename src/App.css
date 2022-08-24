@@ -1,4 +1,16 @@
-@font-face {
-  font-family: 'baotuXB';
-  src: url('./public/font/baotu.ttf');
+body {
+  @apply bg-black;
+  font-family: Comfortaa;
+}
+.ava {
+  z-index: 99;
+  height: 80px;
+  width: 80px;
+  background: url('../public/ava.png');
+  background-size: cover;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.ava:hover {
+  opacity: 1;
 }
